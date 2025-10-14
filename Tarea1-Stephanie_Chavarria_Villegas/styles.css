@@ -1,0 +1,857 @@
+:root {
+  --primary-color: #0B3D2E;
+  --secondary-color: #145C45;
+  --acento: #C5A880;
+  --fondo-claro: #F9F9F6; 
+  --text: #2A2A2A;
+  --sombra: 0 6px 16px rgba(0,0,0,0.1);
+  --radius: 12px;
+  --font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+* {  
+  margin: 0; 
+  padding: 0; 
+  text-decoration: none;
+  list-style: none;
+  box-sizing:border-box;
+
+
+}
+
+body{
+  font-family: var(--font);
+
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  z-index: 1000;
+
+}
+
+nav{
+  background-color: var(--primary-color);
+  height: 4rem;
+  width: 100%;
+  padding: 1rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  font-size: 0.8rem;
+  color: white;
+
+}
+
+.logo span{
+  color: var(--acento);
+
+}
+
+
+nav ul li{
+  display: inline-block;
+
+}
+
+nav ul li a{
+  color: white;
+  padding: 0.5rem 0.5rem;
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+}
+
+nav ul li a:hover{
+  color: var(--acento);
+  transition: 0.2s;
+
+}
+
+.checkbtn{
+  font-size: 1rem;
+  position: absolute;
+  font-size: 1.5rem;
+  color: white;
+  right: 1.5rem;
+  cursor:pointer;
+  display: none;
+}
+
+#check{
+  display:none
+}
+
+/*Seccion Inicio o Home*/
+.home{
+  background:linear-gradient(189deg, #0b3d2e 0%, #1a4a34 50%, #d9c5a0 100%);
+  height: auto;
+  margin-top: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.inic-info{
+
+  background-color: var(--fondo-claro);
+  border-radius: var(--radius);
+  height: auto;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: var(--sombra);
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+
+}
+
+.inic-info h1{
+  margin: 1.5rem;
+  color: #073B26;
+  font-size: 2.3rem;
+
+}
+
+.inic-info p{
+  margin: 0.5rem;
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 500;
+
+}
+
+.inic-info .inic-botones{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn1 {
+
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--radius);
+  background-color: var(--primary-color);
+  border-style: none;
+
+}
+
+.btn1 a{
+  color: white;
+  font-weight: 500;
+}
+
+.btn1:hover{
+  background-color: var(--secondary-color);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn2 {
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--radius);
+  background-color: var(--acento);
+  border-style: none;
+}
+
+.btn2 a{
+  color: var(--primary-color);
+  font-weight:600;
+  box-shadow: var(--sombra);
+}
+
+.btn2:hover{
+  background-color: #dfb890;
+  transition: all 0.3s ease;
+  box-shadow: var(--sombra);
+  cursor: pointer;
+
+}
+
+
+/*Seccion sobre Mi*/
+
+.about{
+  height: auto;
+  margin-top: 0;
+  justify-items: center;
+
+}
+
+.about h2{
+  margin-top: 5rem;
+  color: var(--primary-color);
+  font-size: 1.8rem;
+}
+
+.about hr{
+  width: 8rem;
+  height: 0.2rem;
+  background-color: var(--acento);
+  border-style: none;
+  border-radius: var(--radius);
+  margin-top: 0.5rem;
+
+}
+
+
+.about-info {
+
+  height: 22rem;
+  width: 45rem;
+  margin-top: 4rem;
+  justify-items: center;
+  display: flex;
+  gap: 4rem;
+  margin-bottom: 7rem;
+}
+
+ 
+
+.about-info img{
+  width: 20rem;
+  height: 100%;
+  margin-left: 2rem;
+  border-left-width: 0.3rem;
+  border-left-color: var(--primary-color);
+  border-left-style: solid;
+  border-radius: var(--radius);
+
+}
+
+.about-text{
+  color: var(--primary-color);
+  font-size: 1.4rem;
+
+}
+
+
+.about-text h3{
+  color: var(--primary-color);
+  font-size: 1.4rem;
+
+}
+
+.about-text p{
+  margin-top: 1.5rem;
+  color: var(--text);
+  font-size: 1rem;
+
+}
+
+.about-btn{
+  margin-top: 1rem;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--radius);
+  background-color: var(--acento);
+  border-style: none;
+
+}
+
+.about-btn a{
+  color: var(--primary-color);
+  font-weight:600;
+  box-shadow: var(--sombra);
+}
+
+.about-btn:hover{
+  background-color: #dfb890;
+  transition: all 0.3s ease;
+  box-shadow: var(--sombra);
+  cursor: pointer;
+
+}
+
+/*Seccion Habilidades*/
+
+
+.skills{
+  height: auto;
+  margin-top: 0;
+  justify-items: center;
+  background-color: #F4F1EB
+}
+
+.skills h2{
+  padding-top: 3rem;
+  color: var(--primary-color);
+  font-size: 1.8rem;
+}
+
+.skills hr{
+
+  width: 8rem;
+  height: 0.2rem;
+  background-color: var(--acento);
+  border-style: none;
+  border-radius: var(--radius);
+  margin-top: 0.5rem;
+
+}
+
+.skills-content{
+  padding: 0;
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+
+.skills-cuadro{
+  margin-top: 0rem;
+  width: 15rem;
+  height: auto;
+  background-color: white;
+  border-radius: var(--radius);
+  align-items: center;
+  box-shadow: var(--sombra);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+
+.skills-cuadro .fa-brands {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+
+.skills-cuadro h3{
+  padding-top: 2rem;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+
+}
+
+.skills-cuadro p{
+  padding: 2rem;
+  font-size: 1rem;
+
+}
+
+.skills-cuadro:hover{
+  border-color: var(--primary-color);
+  border-style: solid;
+  border-width: 0.1rem;
+  transition: all 0.1s ease;
+}
+
+/*Seccion Proyectos*/
+
+
+.projects{
+  height: auto;
+  margin-top: 0;
+  justify-items: center;
+
+}
+
+.projects h2{
+  padding-top: 3rem;
+  color: var(--primary-color);
+  font-size: 1.8rem;
+}
+
+.projects hr{
+
+  width: 8rem;
+  height: 0.2rem;
+  background-color: var(--acento);
+  border-style: none;
+  border-radius: var(--radius);
+  margin-top: 0.5rem;
+
+}
+
+.projects-content{
+  padding: 0;
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+
+
+.projects-cuadro{
+  margin-top: 0rem;
+  width: 20rem;
+  height: auto;
+  background-color: white;
+  border-radius: var(--radius);
+  align-items: center;
+  box-shadow: var(--sombra);
+  display: flex;
+  flex-direction: column;
+}
+
+
+.projects-cuadro:hover{
+  box-shadow: 0 4px 30px rgba(11, 61, 46, 0.3);
+  transform: translateY(-3px);
+  transition: all 0.3s ease;
+}
+
+
+
+
+.projects-cuadro img{
+  width: 100%;
+  height: 10rem;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+
+.projects-cuadro h3{
+  padding-top: 1rem;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  align-self: flex-start;
+  padding-left: 1.2rem;
+}
+
+.projects-cuadro p{
+  padding-top: 1rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  font-size: 0.90rem;
+
+}
+
+.projects-btn{
+  margin-top: 1rem;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--radius);
+  background-color: var(--primary-color);
+  border-style: none;
+  justify-self: center;
+  align-self: flex-start;
+  margin-left: 1.2rem;
+  margin-bottom: 1.5rem;
+
+  
+}
+
+.projects-btn:hover{
+  background-color: var(--secondary-color);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.projects-btn a{
+  color: white;
+  font-weight:500;
+  box-shadow: var(--sombra);
+}
+
+/*Seccion Contacto*/
+
+.contact{
+  height: auto;
+  margin-top: 0;
+  justify-items: center;
+
+}
+
+.contact h2{
+  padding-top: 3rem;
+  color: var(--primary-color);
+  font-size: 1.8rem;
+}
+
+.contact hr{
+
+  width: 8rem;
+  height: 0.2rem;
+  background-color: var(--acento);
+  border-style: none;
+  border-radius: var(--radius);
+  margin-top: 0.5rem;
+}
+
+.contact p{
+
+  margin-top: 2rem;
+
+}
+
+.contact .formulario{
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 25rem;
+  margin-top: 2rem;
+
+}
+
+.formulario-info{
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  color: var(--primary-color);
+}
+
+.formulario-info input, textarea{
+  width: 100%;
+  padding: 0.8rem;
+  border-style: solid;
+  border-color: #ccc;
+  border-radius: var(--radius);
+  font-size: 0.8rem;
+  background-color: white;
+
+
+}
+
+.contact-btn{
+  margin-top: 1rem;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--radius);
+  background-color: var(--primary-color);
+  border-style: none;
+  justify-self: center;
+  align-self: center;
+  margin-bottom: 1.5rem;
+  color: white;
+  font-weight:500;
+  box-shadow: var(--sombra);
+
+}
+
+.contact-btn:hover{
+  background-color: var(--secondary-color);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+
+/**/
+
+footer{
+
+  height: auto;
+  margin-top: 0;
+  background: var(--primary-color);
+}
+
+.contenido-footer{
+  padding: 0;
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  padding-left: 5rem;
+  
+
+}
+
+.footer-cuadro{
+  margin-top: 0rem;
+  width: 18rem;
+  height: auto;
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.footer-cuadro h3 {
+  color: white;
+  font-size: 1rem;
+}
+
+.footer-cuadro hr {
+  margin-top: 0.5rem;
+  color: white;
+  width: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-cuadro a {
+  color: white;
+  font-size: 0.8rem;
+  margin-top: 0.6rem;
+}
+
+
+.footer-info {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 0.6rem;
+}
+
+.footer-info .fa-solid {
+  color: white;
+  font-size: 0.8rem;
+}
+
+.footer-info p {
+  color: white;
+  font-size: 0.8rem;
+}
+
+.redes-iconos{
+  display: flex;
+  gap: 1rem;
+}
+
+.redes-iconos i{
+  color: white;
+  gap: 2rem;
+  font-size: 1rem;
+}
+
+.finalhr{
+  color: white;
+  width: 30rem;
+  margin-bottom: 1rem;
+  justify-self: center;
+}
+
+.finalp{
+  color: white;
+  justify-self: center;
+  font-size: 0.7rem;
+  padding-bottom: 1rem;
+}
+
+/*Dispositivos tipo tablet*/
+
+@media(max-width: 952px){
+
+  nav{
+    padding: 1rem 2rem;
+  }
+  nav ul li a{
+    padding: 0.5rem 0.2rem;
+  }
+
+
+}
+
+/*Dispositivos tipo celular*/
+
+@media(max-width: 850px){
+
+
+  .logo{
+  font-size: 0.6rem;
+  color: white;
+
+  }
+
+  .nav{
+    padding: 1rem 0.5rem;
+
+  }
+  .checkbtn{
+    display:block;
+    z-index: 1000;
+  }
+  ul{
+    position:fixed;
+    top: 4rem;
+    left:-100%;
+    width: 100%;
+    height: 100vh;
+    background: var(--acento);
+    text-align: center;
+    transition: all 0.5s;
+
+  }
+
+  nav ul li {
+    display: block;
+    margin: 3rem 4rem;
+
+  }
+
+  nav ul li {
+    display: block;
+    margin: 3rem 4rem;
+
+  }
+
+  nav ul li a{
+    font-size: 25px;
+    
+
+  }
+
+  nav ul li a:hover{
+  background: var(--primary-color);
+  color: white;
+
+}
+
+  #check:checked ~ ul{
+    left: 0;
+  }
+
+/*Celular - Inicio*/
+  
+.home{
+  height: auto;
+}
+
+.inic-info{
+  height: auto;
+  width: 85%;
+}
+
+.inic-info h1{
+  font-size: 1.9rem;
+}
+
+.inic-info p{
+  font-size: 0.9rem;
+}
+
+.inic-info .inic-botones{
+  gap: 0.6rem;
+  flex-direction: column;
+}
+
+.btn1 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.btn2 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  
+}
+
+/*Sobre mi celular*/
+
+
+.about h2{
+  margin-top: 3rem;
+  font-size: 1.8rem;
+}
+
+.about-info {
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 90%; 
+  height: auto;
+  margin-bottom: 4rem;
+}
+
+ 
+
+.about-info img{
+  margin-left: 0;
+  width: 15rem;
+  height: auto;
+  border-left: none;
+
+}
+
+.about-text{
+  font-size: 1.4rem;
+  width: 15rem;
+
+}
+
+
+.about-text h3{
+  font-size: 1.4rem;
+}
+
+.about-text p{
+  margin-top: 1.5rem;
+  font-size: 1rem;
+
+}
+
+/*Celular - Habilidades*/
+
+.skills-content{
+  margin-top: 3rem;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+/*Celular - projectos*/
+
+.projects-content{
+  margin-top: 3rem;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+
+/*Celular - Contacto*/
+
+.contact p{
+
+  margin-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+}
+
+.contact .formulario{
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 25rem;
+  margin-top: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+
+}
+
+/*Celular-footer*/
+.contenido-footer{
+
+  flex-direction: column;
+  gap: 2rem;
+  padding-left: 2rem;
+
+}
+
+.finalhr{
+  color: white;
+  width: 20rem;
+  margin-bottom: 1rem;
+  justify-self: center;
+}
+
+}
+
+
+
